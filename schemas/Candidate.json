@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "Candidate": {
+      "$ref": "#/definitions/Candidate"
+    }
+  },
+  "required": [
+    "Candidate"
+  ],
+  "title":"Candidate",
+  "definitions": {
+    "Candidate": {
+      "$id": "#/properties/Candidate",
+      "type": "object",
+      "title": "Candidate",
+      "required": [
+        "State",
+        "CandidateName",
+        "CandidateSchool",
+        "CandidateNo_",
+        "Score"
+      ],
+      "properties": {
+        "State": {
+          "type": "string"
+        },
+        "CandidateName": {
+          "type": "string"
+        },
+        "CandidateSchool": {
+          "type": "string"
+        },
+        "CandidateNo_": {
+          "type": "string"
+        },
+        "Score": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "_osConfig": {
+    "privateFields": [],
+    "indexFields": [],
+    "uniqueIndexFields": [],
+    "roles": ["admin"],
+    "inviteRoles": ["admin"],
+    "ownershipAttributes": [],
+    "credentialTemplate": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+          "@context": {
+            "@version": 1.1,
+            "@protected": true,
+            "id": "@id",
+            "type": "@type",
+            "schema": "https://schema.org/",
+            "CandidateCredential": {
+              "@id": "did:CandidateCredential",
+              "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "State": "schema:Text",
+                "CandidateName": "schema:name",
+                "CandidateSchool": "schema:Text",
+                "CandidateNo_": "schema:Text",
+                "Score": "schema:Text"
+              }
+            }
+          }
+        }
+      ],
+      "type": [
+        "VerifiableCredential",
+        "CandidateCredential"
+      ],
+      "issuer": "demorc",
+      "issuanceDate": "{{osCreatedAt}}",
+      "expirationDate": "3022-08-31T08:29:36.577Z",
+      "credentialSubject": {
+        "id": "did:{{CandidateNo_}}",
+        "type": "CandidateCredential",
+        "State": "{{State}}",
+        "CandidateName": "{{CandidateName}}",
+        "CandidateSchool": "{{CandidateSchool}}",
+        "CandidateNo_": "{{CandidateNo_}}",
+        "Score": "{{Score}}"
+      }
+    }
+  }
+}
