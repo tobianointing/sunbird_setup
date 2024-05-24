@@ -1,5 +1,10 @@
 ## Setup code for sunbird
 
+### My Docker Resources settings:
+- CPU: 4 cores 
+- RAM: 6 GB
+- Disk: 120 GB
+
 clone the repo 
 
 if you are not using macros, go to docker-compose.yml file and replace the keycloak image with: 
