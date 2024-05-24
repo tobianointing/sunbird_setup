@@ -16,7 +16,7 @@ ghcr.io/sunbird-rc/sunbird-rc-keycloak:latest
 docker compose down
 ```
 
-create a .env file and ask me for the content to paste there.
+create a .env file and copy what is in the .env.example into it.
 
 ```
 bash setup_vault_override.sh docker-compose.yml vault
