@@ -14,7 +14,7 @@ docker compose down
 create a .env file and ask me for the content to paste there.
 
 ```
-bash setup_vault.sh docker-compose.yml vault
+bash setup_vault_override.sh docker-compose.yml vault
 ```
 
 Spin up the needed services
