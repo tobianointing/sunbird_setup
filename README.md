@@ -2,11 +2,10 @@
 
 clone the repo 
 
-go to docker-compose.yml file and replace the keycloak image with: 
+if you are not using macros, go to docker-compose.yml file and replace the keycloak image with: 
 ```
 ghcr.io/sunbird-rc/sunbird-rc-keycloak:latest
 ```
-if you are not using macros.
 
 ```
 docker compose down
