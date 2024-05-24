@@ -1,7 +1,7 @@
 ## Setup code for sunbird
 
 ### My Docker Resources settings:
-- CPU: 4 cores 
+- CPU: 8 cores 
 - RAM: 6 GB
 - Disk: 120 GB
 
